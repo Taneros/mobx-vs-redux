@@ -68,15 +68,15 @@ const state = observable({
 });
 
 autoRun(() => {
-  console.log(state.test, /* state.a */);
+  console.log(state.test, state.a);
 });
 
 state.test = 6;
 state.test = 7;
 state.test = 7;
 
-state.a = "asdf";
-state.a = "asdf2";
-state.a = "asdf3";
+// state.a = "asdf";
+// state.a = "asdf2";
+// state.a = "asdf3";
 
 export {};
