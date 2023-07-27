@@ -82,6 +82,7 @@ const TodoListItems = observer(() => {
 
   const handleDoneChange = useCallback(
     (itemId: number) => {
+      console.log(`Mobx.tsx - line: 85 ->> handleDoneChange`, )
       todos.toggleTodoDone({ id: itemId });
     },
     [todos]
@@ -89,6 +90,7 @@ const TodoListItems = observer(() => {
 
   const handleDeleteTodo = useCallback(
     (itemId: number) => {
+      console.log(`Mobx.tsx - line: 93 ->> handleDeleteTodo`, )
       todos.deleteTodo({ id: itemId });
     },
     [todos]

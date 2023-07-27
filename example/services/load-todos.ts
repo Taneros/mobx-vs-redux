@@ -11,6 +11,6 @@ export const loadTodosFn = () => {
   return new Promise<typeof todos>((res) => {
     setTimeout(() => {
       res(todos);
-    }, 1000);
+    }, 300);
   });
 };

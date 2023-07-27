@@ -9,7 +9,7 @@ function autoRun(cb: Reaction) {
   } finally {
     currentReaction = null;
   }
-}
+} 
 
 function observable<T extends object>(value: T) {
   const deps = new Map<string, Set<Reaction>>();
